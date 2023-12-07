@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Download</h2>
+    <p>Your file has been converted. Click the link below to download:</p>
+    <a href="{{ url_for('static', filename=filename) }}" class="btn btn-success">Download {{ filename }}</a>
+</div>
+
+</body>
+</html>
